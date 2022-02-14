@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="cotainer-fluid card text-center">
+    <h3 class="text-capitalize">{{pokemon.name}}</h3>
+    <p class="text-center">
+        <img src="assets/images/001.png" class="img-fluid" alt="..." width="150">
+    </p>
+   <p class="text-primary">Altura: {{pokemon.height}}</p>
+   <!--  -->
+    <p *ngFor="let pokemonStat of pokemonStat" class="text-primary">
+        {{pokemonStat.stat['name']}}: {{pokemonStat.base_stat}}
+    </p>
+    <p class="text-primary">Peso: {{pokemon.weight}}</p>
+</div>
+
+
